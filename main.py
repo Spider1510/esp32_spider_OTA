@@ -21,46 +21,31 @@ for i in range(0, 1):
 
 # Code for ws2812b strip
 print("Staring ws2812b led strip v2...")
-# Define the pin that the LED strip is connected to
 LED_PIN = 4
 
-# Define the number of LEDs in the strip
 NUM_LEDS = 12
 
-# Create a neopixel object with the LED pin and number of LEDs
 led_strip = neopixel.NeoPixel(machine.Pin(LED_PIN), NUM_LEDS)
 
-# Set the color of all LEDs to red
 led_strip.fill((255, 0, 0))
-
-# Display the new colors on the LED strip
 led_strip.write()
 
-# Wait for 1 second
 time.sleep(1)
 
-# Set the color of all LEDs to green
 led_strip.fill((0, 255, 0))
-
-# Display the new colors on the LED strip
 led_strip.write()
 
-# Wait for 1 second
 time.sleep(1)
 
-# Set the color of all LEDs to blue
 led_strip.fill((0, 0, 255))
-
-# Display the new colors on the LED strip
 led_strip.write()
 
-# Wait for 1 second
-# machine.delay(1000)
+while True:
+	for i in range(NUM_LEDS):
+		led_strip[i] = (255, 0, 0)
+		led_strip.write()
+		time.sleep(1)
 
-# Set the color of all LEDs to off (black)
-# led_strip.fill((0, 0, 0))
-
-# Display the new colors on the LED strip
-# led_strip.write()
-
-
+	led_strip.fill(0, 0, 0)
+	led_strip.write()
+	time.sleep(2)
