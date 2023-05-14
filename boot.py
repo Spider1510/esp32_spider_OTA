@@ -26,5 +26,5 @@ while True:
     print("LED ON!")
     time.sleep(2)
     led.value(0)
-    print("LED OFF")
+    print("LED OFF!")
     time.sleep(0.35)
