@@ -2,7 +2,7 @@ import machine
 import time
 import ugit
 
-ugit.backup()
+# ugit.backup()
 ugit.pull_all()
 
 led = machine.Pin(2, machine.Pin.OUT)
