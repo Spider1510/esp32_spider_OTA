@@ -20,7 +20,7 @@ for i in range(0, 1):
 	time.sleep(off_time)
 
 # Code for ws2812b strip
-print("Staring ws2812b led strip...")
+print("Staring ws2812b led strip v2...")
 # Define the pin that the LED strip is connected to
 LED_PIN = 4
 
