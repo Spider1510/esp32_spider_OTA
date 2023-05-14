@@ -36,6 +36,8 @@ COLOR_YELLOW = (255, 255, 0)
 
 ANIMATION_DELAY = 0.5
 
+valid_colors = [COLOR_RED, COLOR_GREEN, COLOR_BLUE, COLOR_PURPLE, COLOR_YELLOW]
+
 def wheel(pos):
 	if pos < 85:
 		return (pos * 3, 255 - pos * 3, 0)
@@ -96,10 +98,10 @@ time.sleep(1)
 #	time.sleep(2)
 
 while True:
-	color_wipe(COLOR_RED, ANIMATION_DELAY)
-	color_wipe(COLOR_GREEN, ANIMATION_DELAY)
-	color_wipe(COLOR_BLUE, ANIMATION_DELAY)
-	theater_chase(COLOR_PURPLE, ANIMATION_DELAY)
-	theater_chase(COLOR_YELLOW, ANIMATION_DELAY)
-	rainbow_cycle(ANIMATION_DELAY)
+	# color_wipe(COLOR_RED, ANIMATION_DELAY)
+	# color_wipe(COLOR_GREEN, ANIMATION_DELAY)
+	# color_wipe(COLOR_BLUE, ANIMATION_DELAY)
+	my_color = random.choice(valid_colors)
+	theater_chase(my_color, ANIMATION_DELAY)
+	# rainbow_cycle(ANIMATION_DELAY)
 
