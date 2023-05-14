@@ -23,6 +23,8 @@ led = machine.Pin(2, machine.Pin.OUT)
 
 while True:
     led.value(1)
+    print("LED ON!")
     time.sleep(2)
     led.value(0)
+    prnt("LED OFF")
     time.sleep(0.35)
