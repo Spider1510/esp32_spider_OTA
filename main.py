@@ -20,7 +20,7 @@ for i in range(0, 1):
 	time.sleep(off_time)
 
 # Code for ws2812b strip
-print("Staring ws2812b led strip animations v1...")
+print("Staring ws2812b led strip animations v2...")
 LED_PIN = 4
 
 NUM_LEDS = 12
