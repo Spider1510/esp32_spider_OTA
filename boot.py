@@ -1,10 +1,10 @@
 import machine
 import time
-import ugit
+# import ugit
 
-ugit.wificonnect()
+# ugit.wificonnect()
 # ugit.backup()
-ugit.pull_all()
+# ugit.pull_all()
 
 led = machine.Pin(2, machine.Pin.OUT)
 
