@@ -46,6 +46,6 @@ while True:
 		led_strip.write()
 		time.sleep(1)
 
-	led_strip.fill(0, 0, 0)
+	led_strip.fill((0, 0, 0))
 	led_strip.write()
 	time.sleep(2)
