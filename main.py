@@ -37,7 +37,7 @@ led_strip.fill((255, 0, 0))
 led_strip.write()
 
 # Wait for 1 second
-machine.delay(1000)
+time.sleep(1)
 
 # Set the color of all LEDs to green
 led_strip.fill((0, 255, 0))
@@ -46,7 +46,7 @@ led_strip.fill((0, 255, 0))
 led_strip.write()
 
 # Wait for 1 second
-machine.delay(1000)
+time.sleep(1)
 
 # Set the color of all LEDs to blue
 led_strip.fill((0, 0, 255))
