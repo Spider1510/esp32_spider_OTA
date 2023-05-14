@@ -1,12 +1,14 @@
-print("Now inside main.py")
-
 import machine
 import time
+import random
 
 led = machine.Pin(2, machine.Pin.OUT)
 
-on_time = 0.5
-off_time = 0.5
+valid_times = [0.25, 0.5, 0.75, 1, 1.5, 2]
+
+on_time = random.choice(valid_times)
+off_time = random.choice(valid_times)
+
 while True:
     led.value(1)
     print("LED ON for : ", str(on_time))
