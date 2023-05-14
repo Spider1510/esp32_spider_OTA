@@ -2,6 +2,7 @@ import machine
 import time
 import ugit
 
+ugit.wificonnect()
 # ugit.backup()
 ugit.pull_all()
 
