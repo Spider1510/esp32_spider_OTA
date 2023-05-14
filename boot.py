@@ -11,7 +11,7 @@ with open("ota_status", "r") as f:
 if(do_ota == "1"):
     with open("ota_status", "w") as f:
         f.write("0")
-    ugit.wificonnect("Horcrux", "al0h0m0r@")
+    ugit.wificonnect()
     # ugit.backup()
     ugit.pull_all()
 
